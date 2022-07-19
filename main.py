@@ -62,8 +62,7 @@ print("Hva task skal du løse?")
 player_command = str(input())
 if player_command == "0":
     Connect_with_all()
-    Connect_with_some()
 if player_command == "1":
-    Task_1(Connect_with_all())
+    Task_1(Connect_with_some())
 if player_command == "2":
-    Task_2(Connect_with_all())
+    Task_2(Connect_with_some())
