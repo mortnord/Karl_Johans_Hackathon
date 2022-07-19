@@ -19,7 +19,7 @@ def Connect_with_all():
         print(f"Error connecting to MariaDB Platform: {e}")
         sys.exit(1)
     cur = conn.cursor()
-    cur.execute(input())
+    cur.execute("SELECT Fornavn, Etternavn FROM names")
     for fornavn, etternavn in cur:
         print(f"First name: {fornavn}, Last name: {etternavn}")
 
